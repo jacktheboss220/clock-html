@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Macondo', cursive;
+            color: #333333;
+
+        }
+
+        header {
+            text-decoration: none;
+        }
+
+        footer {
+            height: 5vh;
+            width: 100vw;
+            position: fixed;
+            bottom: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar {
+            padding: 5px 0 0 15px;
+            background-color: black;
+            height: 5vh;
+        }
+
+        .navbar ul a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container {
+            height: 70vh;
+            padding: 50px 0;
+        }
+
+        #time {
+            margin: 0 5px 0 15vw;
+            display: inline-block;
+            width: 51vw;
+            font-size: 14vw;
+        }
+
+        #last {
+            display: inline-block;
+            font-size: 10vw;
+        }
+
+        #day {
+            margin: 0 100px;
+            font-size: 35px;
+            text-align: right;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <a href="">
+                    Time.is
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <span id="time"></span><span id="last"></span>
+        <div id="day"></div>
+    </div>
+    <footer class="foot">Copyright &copy;
+        <a href="https://www.github.com/jacktheboss220" target="_blank">
+            jacktheboss220
+        </a>
+    </footer>
+    <script>
+        setInterval(GetTime, 1000);
+        function GetTime() {
+            let a = new Date();
+            // let date = a.toLocaleDateString();
+            let last = '';
+            if (a.getHours() >= 0 && a.getHours() <= 12) {
+                last = "AM";
+            } else {
+                last = "PM"
+            }
+            let DayNmae = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+            let Months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+            let hours = Number(a.getHours());
+            if (hours > 12) {
+                hours = hours - 12;
+            }
+            hours = hours.toString();
+            if (hours.length == 1) {
+                hours = '0' + hours;
+            }
+            let min = a.getMinutes().toString();
+            if (min.length == 1) {
+                min = '0' + min;
+            }
+            let sec = a.getSeconds().toString();
+            if (sec.length == 1) {
+                sec = '0' + sec;
+            }
+            let today = DayNmae[a.getDay() - 1];
+            let month = Months[a.getMonth()];
+            let year = a.getFullYear();
+            let date = a.getDate();
+            document.getElementById('time').innerHTML = hours + ':' + min + ':' + sec;
+            document.getElementById('last').innerHTML = last;
+            document.getElementById('day').innerHTML = today + ',' + date + ' ' + month + ',' + year;
+        }
+    </script>
+</body>
+
+</html>
