@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.image {
+    width: 2vw;
+    /* padding: 10px; */
+    border-radius: 40%;
+
+}
+
+header {
+    background-color: black;
+    color: white;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box1 {
+    height: 30vh;
+    width: 30vw;
+    background-color: red;
+}
+
+.box2 {
+    height: 30vh;
+    width: 30vw;
+    background-color: purple;
+}

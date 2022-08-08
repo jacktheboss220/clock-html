@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    background-image: url('back.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+}
+
+a {
+    color: white;
+}
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.box1 {
+    text-align: center;
+}
+
+.imgPos {
+    padding-top: 50px;
+    position: relative;
+    top: 0;
+}
+
+.form {
+    height: 30vh;
+}
+
+.line {
+    color: black;
+    font-size: 22px;
+}
+.inside{
+    width: 12rem;
+    height: 1.2rem;
+    font-size: 12px;
+}
+
+.sub {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 20px;
+    width: 100vw;
+    text-align: center;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+}
+
+.disclaimer {
+    visibility: hidden;
+}

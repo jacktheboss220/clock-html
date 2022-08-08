@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Photos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            height: 20px;
+            background-color: black;
+        }
+
+        .navbar ul li {
+            color: white;
+            display: inline;
+        }
+
+        .container {
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .bttn {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li id="home">Home</li>
+            <li id="about">About</li>
+            <li id="contact">Contact</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <img id="image" src="https://source.unsplash.com/500x500/?programming,code" alt="">
+    </div>
+    <div class="bttn">
+        <button id="btn">Click Me!</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
