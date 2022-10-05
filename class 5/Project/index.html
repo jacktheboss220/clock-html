@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Combo&display=swap" rel="stylesheet">
+    <title>Historical Places of India</title>
+</head>
+
+<body>
+    <main class="all-items">
+        <header class="header">
+            <div class="header-backimage">
+                <div class="header-content">
+                    Historical Places
+                </div>
+            </div>
+            <div class="line"></div>
+        </header>
+        <section class="grid">
+            <section class="content">
+                <a href="https://en.wikipedia.org/wiki/Taj_Mahal" class="image" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYOwTk1AeGLdF-uLWLUavIvCQxNDFOMm3K_g&usqp=CAU"
+                        alt="Taj Mahal">
+                    Taj Mahal
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Hawa_Mahal" class="image" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNT-0rlELD1td26DePJl23ive-IgdQpLxWlA&usqp=CAU"
+                        alt="Hawa Mahal">
+                    Hawa Mahal
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Victoria_Memorial,_Kolkata" class="image" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs_N9sUUturZ7wkuLty3rJcY6DGthG4tUgTA&usqp=CAU"
+                        alt="Victoria Memorial">
+                    Victoria Memorial
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Qutb_Minar" class="image" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYOMGvmnmMB5UvD2PsWeKpEIZrj5x4i9laAA&usqp=CAU"
+                        alt="Qutub Minar">
+                    Qutub Minar
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Jallianwala_Bagh" class="image" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyLTHjLR3YbaYt4eazy23VazKc_OjVBrQ8iw&usqp=CAU"
+                        alt="Jallianwala Bagh">
+                    Jallianwala Bagh
+                </a>
+                <a href="https://en.wikipedia.org/wiki/India_Gate" class="image" target="_blank">
+                    <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW5kaWElMjBnYXRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="India Gate">
+                    India Gate
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Red_Fort" class="image" target="_blank">
+                    <img src="https://images.unsplash.com/photo-1576519465852-4d119fcccf33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cmVkJTIwZm9ydHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="Red Fort">
+                    Red Fort
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Sun_temple" class="image" target="_blank">
+                    <img src="https://gumlet.assettype.com/swarajya%2F2018-07%2Fdb2d2a75-41f0-4bd8-9f05-35a534a3d5ff%2Ff6f42413_abf2_4b4d_9142_beef1d4cde0c.jpg?format=auto"
+                        alt="Sun Temple">
+                    Sun Temple
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Charminar" class="image" target="_blank">
+                    <img src="https://cdn.theculturetrip.com/wp-content/uploads/2016/06/24498998325_f451c67aae_o.jpg"
+                        alt="CharMinar">
+                    Char Minar
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Golden_Temple" class="image" target="_blank">
+                    <img src="https://sacredsites.com/images/asia/india/golden_temple_1200.jpg" alt="Golden Temple">
+                    Golden Temple
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Gateway_of_India" class="image" target="_blank">
+                    <img src="https://yometro.com/images/places/gateway-of-india.jpg" alt="The Gateway of India">
+                    Gateway of India
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Sanchi" class="image" target="_blank">
+                    <img src="https://static2.tripoto.com/media/filter/tst/img/27074/TripDocument/1537960625_mg_0223_pano_nw_1920_srgb_300dpi.jpg"
+                        alt="Sanchi Stupa">
+                    Sanchi Stupa
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Lotus_Temple" class="image" target="_blank">
+                    <img src="https://www.pandotrip.com/wp-content/uploads/2014/09/Lotus-Tmple-Photo-by-Arpan-Das.jpg"
+                        alt="Lotus Temple">
+                    Lotus Temple
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Jantar_Mantar,_Jaipur" class="image" target="_blank">
+                    <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/05/Jantar-Mantar-cover-img.jpg"
+                        alt="Jantar Mantar">
+                    Jantar Mantar
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Agra_Fort" class="image" target="_blank">
+                    <img src="https://www.andbeyond.com/wp-content/uploads/sites/5/Jahangiri-Mahal-Agra-Fort1.jpg"
+                        alt="Agra Fort">
+                    Agra Fort
+                </a>
+            </section>
+        </section>
+        <footer class="footer">
+            Designed And Developed By Mahesh Kumar.
+        </footer>
+    </main>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-width: 360px;
+            font-family: 'Combo', cursive;
+        }
+
+        .all-items {
+            width: 100%;
+            height: 100%;
+            background-image: url("https://i.ibb.co/9vFyQD0/Wall-Theme-BG.jpg");
+            background-repeat: repeat;
+            background-size: contain;
+            background-position: 50% 50%;
+        }
+
+
+        /* Header CSS Start */
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-backimage {
+            width: 360px;
+            height: 115px;
+            background-image: url('https://i.ibb.co/gRnbJm3/My-History.png');
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: contain;
+        }
+
+        .header-content {
+            width: fit-content;
+            font-size: 1.7rem;
+            font-weight: 600;
+            margin: auto;
+            padding: 15px 0px 0px 0px;
+            transition: all 0.4s;
+        }
+
+        .header-content:hover,
+        .header-backimage:hover div {
+            scale: 1.2;
+        }
+
+        .line {
+            width: 50%;
+            border: 3px solid black;
+            border-radius: 3px;
+            margin: 7px;
+        }
+
+        /* Header CSS Ends */
+
+
+        /* Section > Main (Grid OR Flex) CSS Start */
+
+        .grid {
+            background-color: rgb(213, 253, 253);
+            width: 92%;
+            margin: auto;
+        }
+
+        .content {
+            width: 95%;
+            margin: 10px auto;
+            padding: 25px 0px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: .7rem;
+            justify-content: center;
+        }
+
+        .image img {
+            display: block;
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 426px) {
+            .image img {
+                height: 220px
+            }
+        }
+
+        .content a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-style: oblique;
+            font-weight: 600;
+        }
+
+        .content a:hover {
+            color: #fa6e6e;
+        }
+
+        /* Section > Main (Grid OR Flex) CSS Ends */
+
+
+        /* Footer CSS Start */
+
+        .footer {
+            height: 15vh;
+            font-size: 2rem;
+            color: whitesmoke;
+            text-align: center;
+            background-color: black;
+            padding: 15px;
+        }
+
+        /* Footer CSS Ends */
+    </style>
+</body>
+
+</html>
