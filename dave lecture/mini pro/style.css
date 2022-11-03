@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: calc(1.6rem - .5vw);
+}
+
+header,
+main,
+footer {
+    padding: 2px;
+    text-align: center;
+    background-color: #bfbfbf;
+}
+
+header {
+    position: relative;
+    top: 0;
+    clear: both;
+    width: 100%;
+    min-height: 2rem;
+    background-color: rebeccapurple;
+    color: white;
+    letter-spacing: 4px;
+}
+
+header .links {
+    padding-bottom: 5px;
+    font-size: 1rem;
+}
+
+.links a {
+    color: navajowhite;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+main {
+    height: auto;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+main img {
+    border-radius: 50%;
+    border: 5px double blanchedalmond;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    padding: 5px;
+    border: 2px solid red;
+    height: 100%;
+    width: 18rem;
+    background-color: royalblue;
+    color: white;
+    line-height: 1.9rem;
+}
+
+.mainCard {
+    display: flex;
+    flex-flow: row wrap;
+    gap: .7rem;
+}
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+}
