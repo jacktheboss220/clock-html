@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <script>
+        function handleEvent(oEvent) {
+            var oTextbox = document.getElementById("txt1");
+            oTextbox.value += "\n button down is " + oEvent.button;
+            var arrKeys = [];
+            if (oEvent.ctrlKey) {
+                arrKeys.push("Ctrl");
+            }
+            if (oEvent.shiftKey) {
+                arrKeys.push("Shift");
+            }
+            oTextbox.value += "\n keys down are " + arrKeys;
+        }
+    </script>
+</head>
+
+<body onclick="handleEvent(event)">
+    <P><textarea id="txt1" rows="15" cols="50"></textarea></p>
+</body>
+
+</html>
