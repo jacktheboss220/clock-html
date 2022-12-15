@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    background-image: ;
+} */
+body {
+    background-image: url('./imges/haze.jpeg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* full container */
+.app-main {
+    width: 50vh;
+    margin-inline: auto;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px;
+    background-color: turquoise;
+}
+
+.app-main>* {
+    margin-bottom: 20px;
+}
+
+/* search bar */
+.input-box {
+    width: 100%;
+    background-color: #666;
+    border: none;
+    outline: none;
+    color: red;
+    font-size: 1.3rem;
+    padding: 10px 28px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+/* search bar end*/
+
+/* weather all details section */
+.weather-body {
+    height: 50vh;
+    background-color: plum;
+    padding: 20px;
+    line-height: 2rem;
+    border-radius: 7px;
+    color: brown;
+}
+
+/* city and date -sectionn */
+
+.location-details {
+    font-weight: bold;
+}
+
+.weather-status {
+    padding: 20px;
+}
+
+.temp {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 20px 0;
+    text-shadow: 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.min-max,
+.weather {
+    font-size: 16px;
+    font-weight: 600;
+}
