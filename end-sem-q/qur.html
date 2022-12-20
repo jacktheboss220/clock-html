@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Button</title>
+</head>
+
+<body>
+    <input type="number" name="number" id="number">
+    <button id="btn">Click Me!</button>
+    <script>
+        let num = document.getElementById("number");
+        document.getElementById('btn').addEventListener("click", () => {
+            alert(Math.sqrt(num.value))
+        })
+    </script>
+</body>
+
+</html>

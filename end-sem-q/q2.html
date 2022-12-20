@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Student</title>
+</head>
+
+<body>
+    <h1>Student Details</h1><br>
+    <!-- <abbr title="MAHESH KUMAR">MK</abbr> -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hyper Text Markup Language</dd>
+    </dl>
+    <script>
+        let std = [
+            { rollNo: 202010101130077, name: "Mahesh", CGPA: 8.22 },
+            { rollNo: 202010101130089, name: "Zanib", CGPA: 8.24 },
+            { rollNo: 202010101130070, name: "Shreeya", CGPA: 8.25 }
+        ]
+
+        std.forEach(s => {
+            let name = document.createElement('h3');
+            name.innerText = 'Roll No: ' + s.rollNo + '\n Name: ' + s.name + '\n CGPA: ' + s.CGPA
+            document.body.append(name)
+        })
+    </script>
+
+
+</body>
+
+</html>
