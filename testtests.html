@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cascading Dropdown list</title>
+</head>
+
+<body>
+    Options: <select name="subject" id="subject">
+        <option value="" selected="selected">Select subject</option>
+    </select>
+    <br><br>
+    Output: <select name="topic" id="topic">
+        <option value="" selected="selected">Please select options first </option>
+    </select>
+
+    <script>
+        var selectObject = {
+            "HTML": ["Links", "Images", "Tables", "Lists"],
+            "CSS": ["Borders", "Margins", "Backgrounds", "Float"],
+            "JavaScript": ["Variables", "Operators", "Functions", "Conditions"]
+        }
+        window.onload = function () {
+            var subjectSel = document.getElementById("subject");
+            var topicSel = document.getElementById("topic");
+
+            for (var x in selectObject) {
+                subjectSel.options[subjectSel.options.length] = new Option(x, x);
+            }
+
+            subjectSel.onchange = function () {
+                console.log(subjectSel[subjectSel.selectedIndex].value);
+                topicSel.length = 1;
+                for (var y of selectObject[this[this.selectedIndex].value]) {
+                    topicSel.options[topicSel.options.length] = new Option(y, y);
+                }
+            }
+
+        }
+    </script>
+</body>
+
+</html>

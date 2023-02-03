@@ -1,0 +1,49 @@
+<html>
+<script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+
+<table id="tblToExcl" border="2">
+    <thead>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Grade</th>
+        <th>Roll#</th>
+        <th>Age</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>8</td>
+            <td>118</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Rohnda</td>
+            <td>7</td>
+            <td>153</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Stephen</td>
+            <td>9</td>
+            <td>138</td>
+            <td>14</td>
+        </tr>
+    </tbody>
+</table>
+
+<button id="button" onclick="htmlTableToExcel('xlsx')">Export HTML Table to EXCEL</button>
+
+<script>
+
+    function htmlTableToExcel(type) {
+        var data = document.getElementById('tblToExcl');
+        var excelFile = XLSX.utils.table_to_book(data, { sheet: "sheet1" });
+        XLSX.write(excelFile, { bookType: type, bookSST: true, type: 'base64' });
+        XLSX.writeFile(excelFile, 'ExportedFile:HTMLTableToExcel.' + type);
+    }
+</script>
+
+</html>

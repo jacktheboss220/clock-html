@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <main>
+        <marquee>
+            <h1 class="heading">
+                Google Service and Product
+            </h1>
+        </marquee>
+        <section class="flex-box">
+            <div id="one-box">
+                <select name="test" id="select" class="first">
+                    <option disabled selected>Product</option>
+                    <option value="">one</option>
+                    <option value="">one</option>
+                    <option value="">one</option>
+                    <option value="">one</option>
+                    <option value="">one</option>
+                </select>
+                <select name="" id="select" class="second">
+                    <option disabled selected>Retailer</option>
+                    <option value="">one</option>
+                    <option value="">one</option>
+                    <option value="">one</option>
+                    <option value="">one</option>
+                    <option value="">one</option>
+                </select>
+                <select name="" id="select" class="third">
+                    <option disabled selected>Model</option>
+                    <option value="">one</option>
+                    <option value="">one</option>
+                    <option value="">one</option>
+                    <option value="">one</option>
+                    <option value="">one</option>
+                </select>
+                <div>
+                    <button id="btn-left">Submit</button>
+                </div>
+            </div>
+            <div id="two-box">
+                <select name="test" id="select1" class="first">
+                    <option disabled selected>Product</option>
+                    <option value="one">one</option>
+                    <option value="two">two</option>
+                    <option value="three">three</option>
+                    <option value="four">four</option>
+                    <option value="five">five</option>
+                </select>
+                <select name="" id="select2" class="second">
+                    <option disabled selected>Retailer</option>
+                    <option value="one">one</option>
+                    <option value="two">two</option>
+                    <option value="three">three</option>
+                    <option value="four">four</option>
+                    <option value="five">five</option>
+                </select>
+                <select name="" id="select3" class="third">
+                    <option disabled selected>Model</option>
+                    <option value="one">one</option>
+                    <option value="two">two</option>
+                    <option value="three">three</option>
+                    <option value="four">four</option>
+                    <option value="five">five</option>
+                </select>
+                <canvas id="myChart"></canvas>
+                <button id="btn-right">Submit</button>
+            </div>
+            <script>
+                const select1 = document.getElementById('select1');
+                const select2 = document.getElementById('select2');
+                const select3 = document.getElementById('select3');
+                const btnleft = document.getElementById('btn-left'); // button for left div
+                const btnRight = document.getElementById('btn-right'); //button for right div
+                btnRight.addEventListener('click', () => {
+                    console.log('right button clicked');
+                });
+                btnleft.addEventListener('click', () => {
+                    console.log('left button clicked');
+                });
+
+                select1.addEventListener('change', (e) => {
+                    console.log(e.target.value);
+                });
+                select2.addEventListener('change', (e) => {
+                    console.log(e.target.value);
+                });
+                select3.addEventListener('change', (e) => {
+                    console.log(e.target.value);
+                });
+
+                const ctx = document.getElementById('myChart');
+
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ['iPhone 13', 'iPhone 13 pro', 'samsung s22', 'Nokia 8.3 5G', 'Pixel 7', 'Pixel 7 Pro'],
+                        datasets: [{
+                            label: '# of Votes',
+                            data: [12, 19, 3, 5, 2, 3],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            </script>
+            <!-- <div id="two-box">
+                y = dates
+                x= devices cost change retailers
+            </div> -->
+        </section>
+    </main>
+</body>
+
+</html>
