@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading {
+    user-select: none;
+    width: 100%;
+    text-align: center;
+    color: gray;
+    background-color: bisque;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(248, 236, 219);
+    padding: 0 2px;
+}
+
+.dataForOne {
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.lableForData {
+    width: 100%;
+    background-color: rgb(219, 139, 139);
+    text-align: center;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.paraForData {
+    max-width: 90%;
+    word-wrap: break-word;
+    line-height: 30px;
+}
+
+.btn-show {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+
+#btn,
+.btn {
+    font-size: 18px;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+#selection-box {
+    margin-top: .8rem;
+    display: flex;
+    flex-direction: row;
+    gap: .7rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.options {
+    appearance: none;
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    background-color: lightgreen;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: none;
+    font-family: inherit;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    gap: .7rem;
+    place-content: center;
+    margin-top: .5rem;
+    height: 100px;
+}
+
+.file-input {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+}
+
+table td {
+    border: 1px solid black;
+}
+
+table tr td {
+    user-select: none;
+    width: 200px;
+    text-align: center;
+}
+
+table tr td:hover {
+    cursor: pointer;
+}
