@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>System Usage</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        width: 300px;
+        margin: 100px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      h1 {
+        text-align: center;
+        margin: 0 0 20px 0;
+      }
+
+      p {
+        text-align: center;
+        font-size: 18px;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>System Usage</h1>
+      <p id="ramUsage">RAM Usage:</p>
+      <p id="cpuUsage">CPU Usage:</p>
+    </div>
+
+    <script>
+      // Function to update system usage
+      function updateUsage() {
+        // Retrieve RAM usage and update the HTML
+        navigator.deviceMemory &&
+          (document.getElementById('ramUsage').textContent =
+            'RAM Usage: ' + Math.round(100 - navigator.deviceMemory) + '%')
+
+        // Retrieve CPU usage and update the HTML
+        navigator.hardwareConcurrency &&
+          (document.getElementById('cpuUsage').textContent =
+            'CPU Usage: ' +
+            (100 - Math.round((100 * performance.now()) / 1000)) +
+            '%')
+      }
+
+      // Call updateUsage function initially
+      updateUsage()
+
+      // Update usage every 1 second
+      setInterval(updateUsage, 1000)
+    </script>
+  </body>
+</html>
